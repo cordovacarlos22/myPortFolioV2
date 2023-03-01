@@ -7,8 +7,26 @@ export default {
   fields:[
     {
       name: 'name',
-      title:'name',
-      
+      title:'Name',
+      type:'string'
+    },
+    {
+      name: 'company',
+      title: 'Company',
+      type: 'string'
+    },
+    {
+      name: 'imageUrl',
+      title: 'ImageUrl',
+      type: 'image',
+      options:{
+        hotspot: true,
+      }
+    },
+    {
+      name: 'feedback',
+      title: 'Feedback',
+      type: 'string'
     },
 
   ],
