@@ -64,12 +64,12 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: var(--secondary-color);
+        color: var(--indigo);
       }
     }
     &:hover{
       div{
-        background-color: var(--secondary-color);
+        background-color: var(--indigo);
       }
 
     }
