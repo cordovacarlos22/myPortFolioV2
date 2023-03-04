@@ -101,11 +101,11 @@
     top: 0;
     bottom: 0;
     right: 0;
-    z-index: 5;
+    z-index: 2;
 
     padding: 1rem;
 
-    width: 80%;
+    width: 90%;
     height: 100vh;
 
     display: flex;
@@ -153,11 +153,7 @@
       }
 
     }
-    @media screen and (min-width: 900px) {
-    display: none;
+    
   }
-  }
-  @media screen and (min-width: 900px) {
-    display: none;
-  }
+  
 }
