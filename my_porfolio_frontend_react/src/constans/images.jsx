@@ -27,6 +27,8 @@ import fullstack_about01 from '../assets/fullstack_about01.png'
 import frontend_about01 from '../assets/frontend_about01.png'
 import backend_about01 from '../assets/backend_about01.png'
 import responsivewebdesign_about01 from '../assets/responsivewebdesign_about01.png'
+import merkstack_about01 from '../assets/mern_about01.jpeg'
+import webdeveloment_about01 from '../assets/webdeveloment_about01.jpeg'
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
@@ -79,4 +81,6 @@ export default {
   backend_about01,
   fullstack_about01,
   responsivewebdesign_about01,
+  merkstack_about01,
+  webdeveloment_about01,
 };
