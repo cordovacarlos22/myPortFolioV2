@@ -29,7 +29,7 @@ const About = () => {
     },
     {
       title: "MERN Stack",
-      description: "As a MERN Stack developer, I  use different technologies like  MongoDB, Express, ReactJS, and NodeJS technologies to build an amazing website.",
+      description: "As a MERN Stack developer, I  use different technologies like  MongoDB, Express, ReactJS, and NodeJS technologies to build  amazing websites.",
       imgUrl: images.merkstack_about01
     },
     {
