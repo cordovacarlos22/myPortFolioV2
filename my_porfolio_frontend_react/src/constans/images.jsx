@@ -23,7 +23,10 @@ import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
-
+import fullstack_about01 from '../assets/fullstack_about01.png'
+import frontend_about01 from '../assets/frontend_about01.png'
+import backend_about01 from '../assets/backend_about01.png'
+import responsivewebdesign_about01 from '../assets/responsivewebdesign_about01.png'
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
@@ -72,4 +75,8 @@ export default {
   skype,
   spotify,
   express,
+  frontend_about01,
+  backend_about01,
+  fullstack_about01,
+  responsivewebdesign_about01,
 };

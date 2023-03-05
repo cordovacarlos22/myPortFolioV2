@@ -27,13 +27,13 @@ const Header = () => {
         }}
         transition={{ duration: 1 }}
         className="app__header-info"
-         >
+      >
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hello I'm </p>
-              <h1 className='head-text'>Carlos</h1>
+              <h1 className='head-text'> Carlos</h1>
             </div>
           </div>
 

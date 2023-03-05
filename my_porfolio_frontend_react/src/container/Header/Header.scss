@@ -101,6 +101,8 @@
   div {
     width: 100px;
     height: 100px;
+    display: flex;
+    flex-direction: column;
     border-radius: 50%;
     background: var(--white-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -150,7 +152,7 @@
     }
   }
 
-  @media screen and (max-width:1200px){
+  @media screen and (min-width:485px){
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,6 +160,7 @@
     
     div{
       margin: 1rem;
+      
     }
   }
 }
