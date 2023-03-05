@@ -3,6 +3,9 @@ import './About.scss'
 import { motion } from 'framer-motion'
 // import { images } from '../../constans'
 import {urlFor,client} from '../../client'
+import AppWrapper from '../../wrapper/AppWrapper'
+
+
 // const abouts = [
 //   {
 //     title: "Web  Develoment",
@@ -72,4 +75,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrapper(About,'about') 
