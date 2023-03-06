@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import { motion } from 'framer-motion';
+import { animate, motion } from 'framer-motion';
 import { urlFor, client } from '../../client'
 import AppWrapper from '../../wrapper/AppWrapper'
 import './Work.scss'
@@ -8,8 +8,8 @@ import './Work.scss'
 const Work = () => {
 
   const [activeFilter, setactiveFilter] = useState('All');
-  const [aniteCard, setaniteCard] = useState({ y: 0, opacity: 1 });
-  const [Works, setWorks] = useState([]);
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [works, setWorks] = useState([]);
   const [FilterWork, setFilterWork] = useState([]);
 
 
@@ -22,16 +22,26 @@ const Work = () => {
     });
   }, []);
   const handleWorkFilter = (item) => {
+   setactiveFilter(item);
+   setAnimateCard([{y:100,opacity:0}])
 
+   setTimeout(() => {
+     setAnimateCard([{ y: 0, opacity: 1 }])
+     if(item === 'All'){
+      setFilterWork(works);
+     }else{
+      setFilterWork(works.filter((work)=> work.tags.includes(item)))
+     }
+   },500);
   }
 
 
 
   return (
-    <>
+    <div className='app__work-container'>
       <h2 className='head-text'>My Creative <span> PortFolio </span> Section </h2>
       <div className='app__work-filter'>
-        {['Web App', 'E-Commerce', 'Todo App', 'React Js', 'landing-page', 'All'].map((item, index) => (
+        {['Web App', 'E-Commerce App', 'Todo App', 'React Js', 'Landing-Page','Survey Form','All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -42,7 +52,7 @@ const Work = () => {
         ))}
       </div>
       <motion.div
-        animate={aniteCard}
+        animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
@@ -93,7 +103,7 @@ const Work = () => {
           </div>
         ))}
       </motion.div>
-    </>
+    </div>
   )
 }
 
