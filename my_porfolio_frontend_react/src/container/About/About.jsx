@@ -53,7 +53,7 @@ const About = () => {
   }, []);
 
   return (
-    <>
+    <div className='app__about-container'>
       <h2 className='head-text'>I know That <span>Good Develoment </span> means <span>Good Business</span>
       </h2>
       <div className='app__profiles'>
@@ -71,7 +71,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </div>
   )
 }
 
