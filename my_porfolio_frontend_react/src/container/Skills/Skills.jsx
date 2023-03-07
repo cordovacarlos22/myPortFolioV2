@@ -5,6 +5,7 @@ import { Tooltip as ReactTooltip } from 'react-tooltip'
 
 import { urlFor, client } from '../../client'
 import AppWrapper from '../../wrapper/AppWrapper'
+import MotionWrap from '../../wrapper/MotionWrap'
 import './Skills.scss';
 
 const Skills = () => {
@@ -92,4 +93,9 @@ const Skills = () => {
   )
 }
 
-export default AppWrapper(Skills,'skills');
+
+export default AppWrapper(
+  MotionWrap(Skills, 'app__skills'),
+  'skills',
+  "app__whitebg"
+) 

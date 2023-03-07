@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 // import { images } from '../../constans'
 import {urlFor,client} from '../../client'
 import AppWrapper from '../../wrapper/AppWrapper'
+import MotionWrap from '../../wrapper/MotionWrap'
 
 
 // const abouts = [
@@ -75,4 +76,8 @@ const About = () => {
   )
 }
 
-export default AppWrapper(About,'about') 
+export default AppWrapper(
+  MotionWrap(About, 'app__about') ,
+  'about',
+  "app__whitebg"
+  ) 
