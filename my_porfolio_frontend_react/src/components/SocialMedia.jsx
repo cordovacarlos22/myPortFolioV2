@@ -10,14 +10,14 @@ const SocialMedia = () => {
       </div>
       <div>
         
-        <a href="https://www.linkedin.com/in/cordovacarlos22" alt="twitter" target="_blank" > <FaGithub /></a>
+        <a href="https://github.com/cordovacarlos22" alt="github" target="_blank" > <FaGithub /></a>
       </div>
       {/* <div>
         <a href="https://www.linkedin.com/in/cordovacarlos22" alt="twitter" target="_blank" ><BsInstagram /></a>
        
       </div> */}
       <div>
-        <a href="https://www.linkedin.com/in/cordovacarlos22" alt="twitter" target="_blank" > <BsLinkedin /></a>
+        <a href="https://www.linkedin.com/in/cordovacarlos22" alt="linkedin" target="_blank" > <BsLinkedin /></a>
         
       </div>
     </div>
